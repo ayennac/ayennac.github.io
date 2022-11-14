@@ -1,0 +1,8 @@
+[
+    {"name": "ChoreBuddy",
+    "desc": "ChoreBuddy is a web app that uses the principles of body doubling and community to help users finish their chores.",
+    "tech-stack": ["Python", "PostGreSQL", "Flask"],
+    "link": "https://github.com/ayennac/proj-chores",
+    "img": "/default.jpg"
+    }
+]
