@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import './App.css';
 import Header from './components/Header'
+import Jumbotron from './components/Jumbotron'
 import CardGroup from './components/CardGroup'
 
 function App() {
@@ -30,7 +31,10 @@ function App() {
         <Header/>
       </div>
       <div className = 'container'>
-        <CardGroup cards = {projects} grid = "col-sm-4"/> 
+        <Jumbotron/>
+      </div>
+      <div className = 'container'>
+        <CardGroup title = "Pojects" cards = {projects} grid = "col-sm-4"/> 
       </div>
       <div className = 'container'>
       </div>
