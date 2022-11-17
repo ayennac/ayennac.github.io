@@ -4,7 +4,7 @@ const Card = ({card, grid}) => {
        
         <div class={grid}>
         <div className="card" >
-        <img className="card-img-top" src= {card.img} alt ={card.desc}/>
+        <img className="card-img-top" src= {card.img} alt ={card.title}/>
         <div className="card-body">
             <h5 className="card-title">{card.name}</h5>
             <p className="card-text">{card.desc}</p>
@@ -16,7 +16,6 @@ const Card = ({card, grid}) => {
         </div>
         </div>
         </div>
-        
         )
 }
 

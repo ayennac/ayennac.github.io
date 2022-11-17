@@ -1,22 +1,15 @@
+import Button from './Button'
+
 const Jumbotron = () =>{
     return(
-        <div className ="float-left jumbotron">
-            <div class ="row">
-                <div class = "col-sm-6">
-        <img src= "default.jpg" alt ="Picture of Ayenna"/>
-        </div>
-        <div class = "col-sm-6">
-        <p class="lead">Ayenna [add name badge here] is a community focused researcher interested in the intersection of public policy and tech. Prior to Hackbright they worked in research and communications roles in higher education and non profits. 
-        Most recently, they worked at CivicPulse as a research associate generating data-driven insights about local government. 
-        Outside of work, they like to rock climb and hike around California's beautiful parks.</p>
-        <hr class="my-4"/>
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
-        </div>
-        </div>
-        </div>
+        <div className ="float-left jumbotron align-items-end">
+        <h2 class="display-4">Hi! I'm Ayenna!</h2>
+        <p class="lead"> The last few months, I've been coding it up at Hackbright Academy. Prior to Hackbright, I worked at <a href="civicpulse.org">CivicPulse</a> as a research associate generating data-driven insights about local government.</p>
+        <hr/> 
+        <Button text = 'Projects' link = "#Projects"/>
+        <Button text = 'Email Me' link = 'mailto:ayenanc@gmail.com'/>
+        <Button text = 'LinkedIn' link = 'linkedin.com/ayennac'/>
+        <Button text = 'Github' link = 'github.com/ayennac'/></div>
         )
 }
 export default Jumbotron

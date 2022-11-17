@@ -6,6 +6,7 @@ import './App.css';
 import Header from './components/Header'
 import Jumbotron from './components/Jumbotron'
 import CardGroup from './components/CardGroup'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
     "img": "./default.jpg"
     },
     {"name": "Local Government Diversity Dashboard",
-    "desc": "The Local Government is a one stop for tracking and visualizing demographic data in local government",
+    "desc": "The Local Government Government Diversity Dashboard is a tool for tracking and visualizing demographic data in local government",
     "techstack": ["R ", "Tableau"],
     "link": "https://www.diversitydashboard.org/",
     "linktitle": "Local Government Diversity Dashboard",
@@ -27,18 +28,14 @@ function App() {
     ]
   return (
     <div className="App">
-      <div className ='container'>
-        <Header/>
-      </div>
+  
       <div className = 'container'>
         <Jumbotron/>
       </div>
       <div className = 'container'>
-        <CardGroup title = "Pojects" cards = {projects} grid = "col-sm-4"/> 
+        <CardGroup title = "Projects" cards = {projects} grid = "col-sm-6"/> 
       </div>
-      <div className = 'container'>
-      </div>
-        
+      <Footer></Footer>
     </div>
   );
 }
